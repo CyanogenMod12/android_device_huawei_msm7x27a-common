@@ -178,7 +178,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
    media.stagefright.enable-http=true \
    media.stagefright.enable-fma2dp=true \
    media.stagefright.enable-aac=true \
-   media.stagefright.enable-qcp=true
+   media.stagefright.enable-qcp=true \
+   media.stagefright.use-awesome=true
+
+PRODUCT_PROPERTY_OVERRIDES += \
+   mm.enable.smoothstreaming=true
+
+PRODUCT_PROPERTY_OVERRIDES += \
+   persist.sys.media.use-awesome=true
 
 # Newer camera API isn't supported.
 PRODUCT_PROPERTY_OVERRIDES += \
