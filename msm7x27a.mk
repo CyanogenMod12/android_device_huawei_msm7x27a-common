@@ -182,6 +182,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
    media.stagefright.use-awesome=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
+   lpa.decode=false
+
+PRODUCT_PROPERTY_OVERRIDES += \
    mm.enable.smoothstreaming=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
