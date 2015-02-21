@@ -45,6 +45,7 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_EXTRA_CFLAGS += -DUSE_MDP3
 TARGET_EXTRA_CFLAGS += -DLPA_DEFAULT_BUFFER_SIZE=480
+TARGET_EXTRA_CFLAGS += -DBOARD_CANT_REALLOCATE_OMX_BUFFERS
 TARGET_USES_ION := true
 TARGET_USES_QCOM_BSP := true
 
@@ -60,8 +61,8 @@ ARCH_ARM_HAVE_32_BYTE_CACHE_LINES := true
 BOARD_WANTS_EMMC_BOOT := true
 
 # Compiler flags
-TARGET_GLOBAL_CFLAGS += -mfloat-abi=softfp -mfpu=neon-vfpv4 -mtune=cortex-a5
-TARGET_GLOBAL_CPPFLAGS += -mfloat-abi=softfp -mfpu=neon-vfpv4 -mtune=cortex-a5
+TARGET_GLOBAL_CFLAGS += -mfloat-abi=softfp -mfpu=neon-vfpv4 -mtune=cortex-a9
+TARGET_GLOBAL_CPPFLAGS += -mfloat-abi=softfp -mfpu=neon-vfpv4 -mtune=cortex-a9
 
 # Audio
 BOARD_USES_LEGACY_ALSA_AUDIO := true
@@ -148,3 +149,6 @@ endif
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
+
+# Enable Minikin text layout engine (will be the default soon)
+USE_MINIKIN := true
