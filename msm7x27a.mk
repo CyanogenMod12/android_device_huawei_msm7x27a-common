@@ -21,8 +21,8 @@ $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/huawei/msm7x27a-common/overlay
 
-PRODUCT_AAPT_CONFIG := normal hdpi
-PRODUCT_AAPT_PREF_CONFIG := hdpi
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Packages
 PRODUCT_PACKAGES += \
