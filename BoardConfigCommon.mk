@@ -28,6 +28,8 @@ USE_CAMERA_STUB := true
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
+CM_BUILDTYPE := NIGHTLY
+
 # Architecture and CPU
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon

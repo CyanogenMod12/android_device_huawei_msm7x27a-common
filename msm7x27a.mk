@@ -24,6 +24,8 @@ DEVICE_PACKAGE_OVERLAYS += device/huawei/msm7x27a-common/overlay
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
+CM_BUILDTYPE := NIGHTLY
+
 # Packages
 PRODUCT_PACKAGES += \
     audio.primary.msm7x27a \
