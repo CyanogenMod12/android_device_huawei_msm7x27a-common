@@ -136,7 +136,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwc.fakevsync=1 \
     ro.max.fling_velocity=4000 \
     ro.opengles.version=131072 \
-    ro.sf.lcd_density=240 \
+    ro.sf.lcd_density=230 \
     #persist.sys.force_highendgfx=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -179,13 +179,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
    media.stagefright.use-awesome=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
-   lpa.decode=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
    mm.enable.smoothstreaming=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
-   persist.sys.media.use-awesome=true
 
 # Newer camera API isn't supported.
 PRODUCT_PROPERTY_OVERRIDES += \
