@@ -159,8 +159,7 @@ on post-fs-data
     mkdir /data/misc/bluetooth 0770 bluetooth bluetooth
 
     chmod 0666 /sys/class/rfkill/rfkill0/state
-    
-on post-fs-data
+
     # Create the directories used by the Wireless subsystem
     mkdir /data/misc/wifi 0770 wifi wifi
     mkdir /data/misc/wifi/load 0770 wifi wifi
