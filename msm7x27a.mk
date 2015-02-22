@@ -140,8 +140,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     #persist.sys.force_highendgfx=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapgrowthlimit=52m \
-    dalvik.vm.heapsize=128m \
+    dalvik.vm.heapgrowthlimit=68m \
+    dalvik.vm.heapsize=512m \
     ro.config.low_ram=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
