@@ -178,6 +178,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
    media.stagefright.enable-fma2dp=true \
    media.stagefright.enable-aac=true \
    media.stagefright.enable-qcp=true
+   
+# ZRAM
+PRODUCT_PROPERTY_OVERRIDES += \
+sys.zram.size=134217728 \
+sys.zram.enable=true
 
 # Newer camera API isn't supported.
 PRODUCT_PROPERTY_OVERRIDES += \
